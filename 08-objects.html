@@ -49,6 +49,45 @@
       console.log(JSON.parse(jsonString));*/
 
       console.log("hello".length);
+
+      const obj1 = {
+        message: "hello",
+      };
+
+      const obj2 = obj1; //copy by references
+
+      obj1.message = "good job";
+      console.log(obj1);
+      console.log(obj2);
+
+      const obj3 = {
+        message: "good job",
+      };
+
+      console.log(obj3 === obj1);
+      console.log(obj2 === obj1);
+
+      const obj4 = {
+        message: "good job",
+        price: 799,
+      };
+      //const message = obj4.message;
+      const { message, price } = obj4;
+      console.log(message);
+      console.log(price);
+
+      const obj5 = {
+        // mesage: message,
+        message,
+        // method: function fun1() {
+        //   console.log("methods");
+        // },
+        method() {
+          console.log("methods");
+        },
+      };
+
+      obj5.method();
     </script>
   </body>
 </html>

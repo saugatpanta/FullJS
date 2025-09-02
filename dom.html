@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM-Course</title>
+  </head>
+  <body>
+    <button>Hello</button>
+    <button class="js-btn">Second btn</button>
+    <script>
+      //document object model
+      /*document.body.innerText = "hello";
+      document.title = "Good job";
+
+      console.log(document.body.innerHTML);
+
+      document.body.innerHTML = "<button> Good job! </button>";*/
+
+      console.log(document.querySelector("button").innerHTML);
+
+      document.querySelector("button").innerHTML = "Changed";
+
+      const btnElement = document.querySelector(".js-btn");
+      console.log(btnElement);
+    </script>
+  </body>
+</html>
